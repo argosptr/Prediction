@@ -22,7 +22,7 @@ namespace prediction
             var mereka = ObjectMgr.GetEntities<Hero>().Where(x => x.Team != ObjectMgr.LocalHero.Team).ToList();
             foreach (var dia in mereka)
             {
-                if (!dia.IsIllusion && !dia.IsVisible)
+                if (!dia.IsIllusion)
                 {
                     posisiterakhir(dia);
                 }
