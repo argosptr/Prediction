@@ -44,7 +44,7 @@ namespace prediction
                         Drawing.DrawLine(Drawing.WorldToScreen(dia.Position), garis, Color.Red);
                         Drawing.DrawText(string.Format("{0} {1}", dia.Name.Replace("npc_dota_hero_",""), (int)Game.GameTime), Drawing.WorldToScreen(dia.Position), Color.Cyan, FontFlags.AntiAlias | FontFlags.Outline);
                     }
-                }
+                } 
             }
             catch (Exception ex)
             { }
